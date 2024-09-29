@@ -1,0 +1,236 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SallSoffy Technologies - Modern Web & Software Security</title>
+<style>
+  :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #ecf0f1;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .services {
+    padding: 100px 0;
+  }
+  
+  .services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .service-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">SallSoffy </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Securing Your Digital Future</h1>
+        <p>Innovative cybersecurity solutions for web and software</p>
+        <a href="contactus.html" class="cta-button">Get Protected Now</a>
+      </div>
+    </section>
+    
+    <section id="services" class="services container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <h3>Web Security Audits</h3>
+          <p>Comprehensive analysis of your web applications to identify and mitigate vulnerabilities.</p>
+        </div>
+        <div class="service-item">
+          <h3>Software Penetration Testing</h3>
+          <p>Rigorous testing to uncover potential weaknesses in your software before attackers do.</p>
+        </div>
+        <div class="service-item">
+          <h3>Secure Development Training</h3>
+          <p>Empower your team with the latest secure coding practices and threat modeling techniques.</p>
+        </div>
+        <div class="service-item">
+          <h3>Incident Response Planning</h3>
+          <p>Develop and implement robust strategies to effectively respond to security incidents.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 SallSoffy Tech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add a scroll effect to show/hide the header
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", function() {
+      let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollTop > lastScrollTop) {
+        document.querySelector("header").style.top = "-80px";
+      } else {
+        document.querySelector("header").style.top = "0";
+      }
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    }, false);
+
+    // Add animation to service items
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-item').forEach((item) => {
+      item.style.opacity = 0;
+      item.style.transform = "translateY(20px)";
+      item.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+      observer.observe(item);
+    });
+  </script>
+</body>
+</html>

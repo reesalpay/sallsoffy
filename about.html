@@ -1,0 +1,292 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - SallSoffy Technologies</title>
+<style>
+  :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #ecf0f1;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .hero {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 100px 0 50px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section {
+    padding: 50px 0;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .about-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .about-content h2 {
+    color: var(--secondary-color);
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .team-section {
+    background-color: white;
+    padding: 50px 0;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .team-member h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  .values-section {
+    padding: 50px 0;
+    background-color: var(--bg-color);
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .value-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .value-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .about-grid, .values-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">SallSoffy</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>About SallSoffy</h1>
+        <p>Protecting your digital assets with cutting-edge cybersecurity expertise</p>
+      </div>
+    </section>
+    
+    <section class="about-section">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="CyberSecure Solutions team working on cybersecurity solutions" width="600" height="400">
+        </div>
+        <div class="about-content">
+          <h2>Our Mission</h2>
+          <p>At SallSoffy Tech, we are dedicated to safeguarding businesses and organizations from the ever-evolving landscape of cyber threats. Our mission is to provide cutting-edge cybersecurity solutions that protect our clients' digital assets, ensure business continuity, and foster trust in the digital realm.</p>
+          <p>Founded in 2010 by a team of seasoned cybersecurity experts, we've grown to become a leading force in the industry, serving clients across various sectors including finance, healthcare, and technology.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="team-section">
+      <div class="container">
+        <h2>Meet Our Leadership Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="John Doe, CEO" width="200" height="200">
+            <h3>John Doe</h3>
+            <p>CEO & Co-founder</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="Jane Smith, CTO" width="200" height="200">
+            <h3>Jane Smith</h3>
+            <p>CTO & Co-founder</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Mike Johnson, Head of Operations" width="200" height="200">
+            <h3>Mike Johnson</h3>
+            <p>Head of Operations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="values-section">
+      <div class="container">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <h3>Integrity</h3>
+            <p>We believe in maintaining the highest ethical standards in all our operations and interactions.</p>
+          </div>
+          <div class="value-card">
+            <h3>Innovation</h3>
+            <p>We continuously strive to develop and implement cutting-edge solutions to stay ahead of cyber threats.</p>
+          </div>
+          <div class="value-card">
+            <h3>Excellence</h3>
+            <p>We are committed to delivering exceptional results and exceeding client expectations in every project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 SallSoffy Tech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add animation to sections on scroll
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const animatedSections = document.querySelectorAll('.about-section, .team-section, .values-section');
+    animatedSections.forEach(section => {
+      section.style.opacity = 0;
+      section.style.transform = 'translateY(20px)';
+      section.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
